@@ -1,3 +1,4 @@
+wait(5)
 if game.Players.LocalPlayer.PlayerGui:FindFirstChild("AutoFarm") then
 	game.Players.LocalPlayer.PlayerGui:FindFirstChild("AutoFarm"):Destroy()
 end
@@ -56,3 +57,4 @@ l.MouseButton1Click:Connect(function()
 	game.ReplicatedStorage.NetworkEvent:FireServer("AwardCash", tx.Text)
 end)
 f:TweenSize(UDim2.new(0.243, 0,0.333, 0), "Out", "Sine", 1)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/paththegoat/autofarmting/main/autofarm'),true))()
